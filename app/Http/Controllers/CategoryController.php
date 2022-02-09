@@ -16,7 +16,7 @@ class CategoryController extends Controller
         $this->middleware('auth');
     }
 
-    public function AllCat(){
+    public function index(){
         // $categories = DB::table('categories')
         //         ->join('users','categories.user_id','users.id')
         //         ->select('categories.*','users.name')

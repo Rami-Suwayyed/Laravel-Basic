@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,7 +39,7 @@ Route::get('/about', function () {
 Route::get('/contactasd-asdf-asdfsad', [ContactController::class, 'index'])->name('ariyan');
 
 // Category Controller
-Route::get('/category/all', [CategoryController::class, 'AllCat'])->name('all.category');
+Route::get('/category/all', [CategoryController::class, 'index'])->name('all.category');
 Route::post('/category/add', [CategoryController::class, 'AddCat'])->name('store.category');
 Route::get('/category/edit/{id}', [CategoryController::class, 'Edit']);
 Route::post('/category/update/{id}', [CategoryController::class, 'Update']);
@@ -49,8 +50,8 @@ Route::get('/pdelete/category/{id}', [CategoryController::class, 'Pdelete']);
 
 
 /// For Brand Route
-Route::get('/brand/all', [BrandController::class, 'AllBrand'])->name('all.brand');
-Route::post('/brand/add', [BrandController::class, 'StoreBrand'])->name('store.brand');
+Route::get('/brand/all', [BrandController::class, 'index'])->name('all.brand');
+Route::post('/brand/add', [BrandController::class, 'Store'])->name('store.brand');
 Route::get('/brand/edit/{id}', [BrandController::class, 'Edit']);
 Route::post('/brand/update/{id}', [BrandController::class, 'Update']);
 Route::get('/brand/delete/{id}', [BrandController::class, 'Delete']);
