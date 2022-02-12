@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
+use Auth;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 
@@ -16,7 +16,7 @@ class CategoryController extends Controller
         $this->middleware('auth');
     }
 
-    public function index(){
+    public function AllCat(){
         // $categories = DB::table('categories')
         //         ->join('users','categories.user_id','users.id')
         //         ->select('categories.*','users.name')
@@ -34,11 +34,11 @@ class CategoryController extends Controller
     public function AddCat(Request $request){
         $validatedData = $request->validate([
             'category_name' => 'required|unique:categories|max:255',
-
+            
         ],
         [
             'category_name.required' => 'Please Input Category Name',
-            'category_name.max' => 'Category Less Then 255Chars',
+            'category_name.max' => 'Category Less Then 255Chars', 
         ]);
 
         Category::insert([
@@ -56,7 +56,7 @@ class CategoryController extends Controller
         // $data['category_name'] = $request->category_name;
         // $data['user_id'] = Auth::user()->id;
         // DB::table('categories')->insert($data);
-
+ 
         return Redirect()->back()->with('success','Category Inserted Successfull');
 
     }
@@ -76,7 +76,7 @@ class CategoryController extends Controller
         //     'user_id' => Auth::user()->id
 
         // ]);
-
+        
         $data = array();
         $data['category_name'] = $request->category_name;
         $data['user_id'] = Auth::user()->id;
