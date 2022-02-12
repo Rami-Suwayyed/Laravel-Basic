@@ -39,7 +39,7 @@
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                   
+
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
@@ -52,7 +52,7 @@
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                   
+
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
@@ -65,7 +65,7 @@
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                   
+
                 </svg>
                 <i class="bx bx-tachometer"></i>
               </div>
@@ -78,7 +78,7 @@
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  
+
                 </svg>
                 <i class="bx bx-layer"></i>
               </div>
@@ -91,7 +91,7 @@
             <div class="icon-box iconbox-red">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  
+
                 </svg>
                 <i class="bx bx-slideshow"></i>
               </div>
@@ -104,7 +104,7 @@
             <div class="icon-box iconbox-teal">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                   
+
                 </svg>
                 <i class="bx bx-arch"></i>
               </div>
@@ -128,7 +128,7 @@
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
-             
+
           </div>
         </div>
 
@@ -146,8 +146,8 @@
           </div>
           @endforeach
 
-          
- 
+
+
 
         </div>
 
@@ -172,7 +172,7 @@
           </div>
           @endforeach
 
-          
+
 
         </div>
 

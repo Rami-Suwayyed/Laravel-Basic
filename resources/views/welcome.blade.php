@@ -38,11 +38,11 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    
+
                 </div>
                 <h1> Dashboard Page  </h1>
                 <a href="{{ url('/') }}">Dashboard</a> |
-                <a href="{{ URL::to('/about') }}">About</a> | 
+                <a href="{{ URL::to('/about') }}">About</a> |
                 <a href="{{ route('ariyan') }}">Contact</a> |
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
@@ -116,7 +116,7 @@
                                 <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                             </svg>
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
+                            <a href="https://github.com/Rami-Suwayyed" class="ml-1 underline">
                                 Sponsor
                             </a>
                         </div>
