@@ -102,7 +102,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign In</button>
                                     <p>Don't have an account yet ?
-                                        <a class="text-blue" href="{{ route('register') }}">Sign Up</a>
+                                        <a class="text-blue" href="#">Sign Up</a>
                                     </p>
                                 </div>
                             </div>
@@ -112,8 +112,8 @@
             </div>
         </div>
         <div class="copyright pl-0">
-            <p class="text-center">&copy; 2018 Copyright easy Dashboard by
-                <a class="text-primary" href="http://www.easylearningbd.com/" target="_blank">Easy</a>.
+            <p class="text-center">&copy; 2021 Copyright easy Dashboard by
+                <a class="text-primary" href="#" target="_blank">Suwayyed</a>.
             </p>
         </div>
     </div>

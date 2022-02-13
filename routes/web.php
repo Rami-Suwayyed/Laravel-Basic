@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/email/verify', function () {
     return view('auth.verify-email');
-})->middleware(['auth'])->name('verification.notice');
+})->middleware(['auth','register' => false])->name('verification.notice');
 
 Route::get('/', function () {
     $brands = DB::table('brands')->get();
@@ -32,10 +32,10 @@ Route::get('/about', function () {
     return view('about');
 });
 
-  
+
 Route::get('/contactasd-asdf-asdfsad', [ContactController::class, 'index'])->name('ariyan');
- 
-// Category Controller 
+
+// Category Controller
 Route::get('/category/all', [CategoryController::class, 'AllCat'])->name('all.category');
 Route::post('/category/add', [CategoryController::class, 'AddCat'])->name('store.category');
 
@@ -79,7 +79,7 @@ Route::get('/portfolio', [AboutController::class, 'Portfolio'])->name('portfolio
 
 
 
-// Amdin Contact Page Route 
+// Amdin Contact Page Route
 Route::get('/admin/contact', [ContactController::class, 'AdminContact'])->name('admin.contact');
 Route::get('/admin/add/contact', [ContactController::class, 'AdminAddContact'])->name('add.contact');
 Route::post('/admin/store/contact', [ContactController::class, 'AdminStoreContact'])->name('store.contact');
@@ -88,7 +88,7 @@ Route::get('/admin/message', [ContactController::class, 'AdminMessage'])->name('
 
 
 
-/// Home Contact Page Route 
+/// Home Contact Page Route
 Route::get('/contact', [ContactController::class, 'Contact'])->name('contact');
 Route::post('/contact/form', [ContactController::class, 'ContactForm'])->name('contact.form');
 
@@ -103,10 +103,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/user/logout', [BrandController::class, 'Logout'])->name('user.logout');
 
 
-/// Chanage Password and user Profile Route 
+/// Chanage Password and user Profile Route
 Route::get('/user/password', [ChangePass::class, 'CPassword'])->name('change.password');
 Route::post('/password/update', [ChangePass::class, 'UpdatePassword'])->name('password.update');
 
-// User Profile 
+// User Profile
 Route::get('/user/profile', [ChangePass::class, 'PUpdate'])->name('profile.update');
 Route::post('/user/profile/update', [ChangePass::class, 'UpdateProfile'])->name('update.user.profile');
